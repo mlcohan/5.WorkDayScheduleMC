@@ -1,4 +1,4 @@
-$document.ready(function() {
+
 
 var myDay 
 
@@ -28,7 +28,7 @@ function displayReminders() {
 }
 
 // sets any existing localStorage data to the view if it exists
-function init() {
+
     var storedDay = JSON.parse(localStorage.getItem("myDay"));
 
     if (storedDay) {
@@ -37,6 +37,4 @@ function init() {
 
     saveReminders();
     displayReminders();
-}
 
-})
