@@ -1,6 +1,6 @@
 
 
-var myDay 
+var today 
 
 var now = moment()
 
@@ -12,16 +12,17 @@ function getHeaderDate() {
 getHeaderDate();
 
 
+//Save Button
+$(".saveBtn").on("click", function saveReminders() {
+    localStorage.setItem("today", JSON.stringify(today));
+})
 
 
 
-// saves data to localStorage
-function saveReminders() {
-    localStorage.setItem("myDay", JSON.stringify(myDay));
-}
 
 // sets any data in localStorage to the view
 function displayReminders() {
+    var today =localStorage.getItem()
     // myDay.forEach(function (_thisHour) {
     //     $(`#${_thisHour.id}`).val(_thisHour.reminder);
     // })
@@ -37,4 +38,6 @@ function displayReminders() {
 
     saveReminders();
     displayReminders();
+
+    
 
