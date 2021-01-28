@@ -32,20 +32,69 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+      
       <!-- Timeblocks go here -->
-      <table class="time-block" 100%>
-        <tr class="row" id="today">
-          <th class="hour">12:00AM</th>
-          <textarea class="description"> </textarea>
-          <button class="saveBtn"></button>
-        </tr>
-        
+      <div class="container time-block">
+      <table>
+        <div class="row" id="time">
+          <p class="col-1 hour">8:00AM</p>
+          <textarea class="col-10 description" id="8am"> </textarea>
+          <button class="col-1 saveBtn" id="save1">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">9:00AM</p>
+          <textarea class="col-10 description" id="9am"> </textarea>
+          <button class="col-1 saveBtn" id="save2">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">10:00AM</p>
+          <textarea class="col-10 description" id="10am"> </textarea>
+          <button class="col-1 saveBtn" id="save3">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">11:00AM</p>
+          <textarea class="col-10 description" id="11am"> </textarea>
+          <button class="col-1 saveBtn" id="save4">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">12:00AM</p>
+          <textarea class="col-10 description" id="12pm"> </textarea>
+          <button class="col-1 saveBtn" id="save5">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">1:00PM</p>
+          <textarea class="col-10 description" id="1pm"> </textarea>
+          <button class="col-1 saveBtn" id="save6">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">2:00PM</p>
+          <textarea class="col-10 description" id="2pm"> </textarea>
+          <button class="col-1 saveBtn" id="save7">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">3:00PM</p>
+          <textarea class="col-10 description" id="3pm"> </textarea>
+          <button class="col-1 saveBtn" id="save8">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">4:00PM</p>
+          <textarea class="col-10 description" id="4pm"> </textarea>
+          <button class="col-1 saveBtn" id="save9">Save</button>
+        </div>
+        <div class="row" id="time">
+          <p class="col-1 hour">5:00PM</p>
+          <textarea class="col-10 description" id="5pm"> </textarea>
+          <button class="col-1 saveBtn" id="save10">Save</button>
+        </div>
       </table>
-    </div>
+      <div class="container" id="clear">
+        <button class="btn btn-info" id="clearBtn">Clear Schedule</button>
+      </div>
+    </div> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
