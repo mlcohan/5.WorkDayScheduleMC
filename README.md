@@ -33,8 +33,8 @@ Screenshot 2:
 
 ## Links to Deployed App
 
-https://github.com/mlcohan/4.CodeQuizMC
+https://github.com/mlcohan/5.WorkDayScheduleMC
 
-https://mlcohan.github.io/4.CodeQuizMC/
+ https://mlcohan.github.io/5.WorkDayScheduleMC/
 
 
