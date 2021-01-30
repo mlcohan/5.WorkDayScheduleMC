@@ -55,6 +55,7 @@ $("#save10").click(function() {
      localStorage.setItem("5PM", JSON.stringify(storedInput));
 });
 
+
     //display saved reminders 
 function displayReminders() {
 
@@ -100,14 +101,12 @@ function displayReminders() {
 
     }
 
-    //make one for each hour, MIGHT need unique name 
+    //make one for each hour
         
    displayReminders();
 
 
-   //COMPARE CURRENT TIME TO TIME IN FUNCTION
-  //look at drink example from class 
-   
+
         var currentTime = dayjs().hour(); //get current time
         var eightAm = 8
         var nineAm = 9
@@ -121,7 +120,8 @@ function displayReminders() {
         var fivePm = 17
 
      
-
+   //COMPARE CURRENT TIME TO TIME IN FUNCTION
+   
         var timeOfDay = [eightAm, nineAm, tenAm, elevenAm, twelvePm, onePm, twoPm, threePm, fourPm, fivePm];
 
         for (var i=0; i < timeOfDay.length; i++){
@@ -226,6 +226,7 @@ function displayReminders() {
 
             }
 
+            //clears data with a clear button
         $("#clearBtn").click(function(){
             localStorage.clear()
             location.reload()
